@@ -44,7 +44,7 @@ def test_label_rep():
     for index, value in enumerate(labels):
         assert value in train_dataset.targets,f" {value} is not present in the dataset" 
         
-@pytest.mark.parametrize("dim1,dim2,expected", [(28,28,784), (10,10,100), (32,32,1024)])
+@pytest.mark.parametrize("dim1,dim2,expected", [(28,28,78), (10,10,100), (32,32,1024)])
 def test_dim_flatten(dim1,dim2,expected):
     temp_tens = torch.rand(dim1,dim2)
     assert torch.flatten(temp_tens).size(dim=0) == expected, f"input dimension: [{dim1}, {dim2}] did not meet expecteed output size after flattening of {expected}."
