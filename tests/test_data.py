@@ -1,8 +1,8 @@
 import pytest
 import torch
-from torchvision.datasets import MNIST
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
+from torchvision.datasets import MNIST
 
 #########################################---TESTING---##################################################
 # the next portion of the script will be testing some key point about the data, such as dimensionlity, #
