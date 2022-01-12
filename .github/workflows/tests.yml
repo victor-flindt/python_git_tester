@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install -r requirements_tests.txt
-    - name: Test with pytest
+    - name: Run test from test_data.py with pytest
       run: |
         pip install pytest
         pytest -v tests\
